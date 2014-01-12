@@ -22,7 +22,7 @@ public class Server implements Calculator {
         try {
             String name = "TaxCalc";
             Server engine = new Server();
-            Server stub = (Server) UnicastRemoteObject.exportObject(engine, 0);
+            Calculator stub = (Calculator) UnicastRemoteObject.exportObject(engine, 0);
             Registry registry = LocateRegistry.getRegistry();
             registry.rebind(name, stub);
             System.out.println("TaxCalc bound");
@@ -32,8 +32,7 @@ public class Server implements Calculator {
         }
 	}
 	
-	@Override
-	public double calcVat(List<Product> products) throws RemoteException {
+	public long calcVat(List<Product> products) throws RemoteException {
 		return 0;
 	}
 

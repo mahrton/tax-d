@@ -14,7 +14,7 @@ public class Client {
 			System.setSecurityManager(new SecurityManager());
 		}
 		try {
-			String name = "Compute";
+			String name = "TaxCalc";
 			Registry registry = LocateRegistry.getRegistry(args[0]);
 			Calculator calc = (Calculator) registry.lookup(name);
 			Product p = new Product(ProductType.OTHER, 100);
