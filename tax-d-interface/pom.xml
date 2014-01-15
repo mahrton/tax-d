@@ -5,13 +5,13 @@
 	<parent>
 		<groupId>org.taxd</groupId>
 		<artifactId>tax-d</artifactId>
-		<version>1.0-SNAPSHOT</version>
+		<version>1.0</version>
 		<relativePath>../</relativePath>
 	</parent>
 
 	<groupId>org.taxd</groupId>
 	<artifactId>tax-d-interface</artifactId>
-	<version>1.0-SNAPSHOT</version>
+	<version>1.0</version>
 	<packaging>jar</packaging>
 
 	<name>tax-d-interface</name>

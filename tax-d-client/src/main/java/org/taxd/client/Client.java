@@ -4,9 +4,9 @@ import java.rmi.registry.LocateRegistry;
 import java.rmi.registry.Registry;
 import java.util.Arrays;
 
-import org.taxd.remote.Calculator;
-import org.taxd.remote.Product;
-import org.taxd.remote.Product.ProductType;
+import org.taxd.interfaces.Calculator;
+import org.taxd.interfaces.Product;
+import org.taxd.interfaces.Product.ProductType;
 
 public class Client {
 	public static void main(String args[]) {

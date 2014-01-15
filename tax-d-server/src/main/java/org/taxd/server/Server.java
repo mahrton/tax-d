@@ -6,8 +6,8 @@ import java.rmi.registry.Registry;
 import java.rmi.server.UnicastRemoteObject;
 import java.util.List;
 
-import org.taxd.remote.Calculator;
-import org.taxd.remote.Product;
+import org.taxd.interfaces.Calculator;
+import org.taxd.interfaces.Product;
 
 public class Server implements Calculator {
 
