@@ -1,4 +1,4 @@
-package org.taxd.remote;
+package org.taxd.interfaces;
 
 import java.util.List;
 import java.rmi.Remote;
