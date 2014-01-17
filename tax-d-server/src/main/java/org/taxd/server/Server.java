@@ -1,5 +1,6 @@
 package org.taxd.server;
 
+import java.net.URL;
 import java.rmi.RemoteException;
 import java.rmi.registry.LocateRegistry;
 import java.rmi.registry.Registry;
@@ -16,6 +17,8 @@ public class Server implements Calculator {
 	}
 	
 	public static void main(String[] args) {
+		System.setProperty("java.security.policy", "/home/marton/dev/workspace/tax-d/tax-d-server/src/main/resources/server.policy");
+		System.out.println("java.security.policy - " + System.getProperty("java.security.policy"));
         if (System.getSecurityManager() == null) {
             System.setSecurityManager(new SecurityManager());
         }
